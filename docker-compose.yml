@@ -1,0 +1,11 @@
+version: "2"
+services:
+  postgres:
+    image: "postgres:latest"
+    restart: always
+    volumes:
+      - "/Users/digitalhouse/Documents/postgresql/data:/var/lib/postgresql/data"
+    environment:
+      - POSTGRES_PASSWORD=local
+    ports:
+      - "5432:5432"
